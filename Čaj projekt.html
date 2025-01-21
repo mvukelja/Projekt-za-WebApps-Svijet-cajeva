@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stranica o čajevima i njihovim prednostima">
+  <meta name="keywords" content="čaj, zeleni čaj, zdravlje, čajna kultura">
+  <meta name="author" content="Vaše ime">
+  <title>Svijet Čajeva</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-image: url('./tea banner.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Roboto', sans-serif;
+      color: #e2dddd;
+    }
+
+    
+    header {
+      background-color: rgba(19, 18, 18, 0.5);
+      color: #6BBF59;
+      padding: 50px 0;
+      text-align: center;
+      animation: fadeInDown 1.5s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+      animation: popIn 1.2s ease-in-out;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: #e6e0e0;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      color: #a6c2a0;
+      transform: scale(1.1);
+    }
+
+    
+    main {
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      margin: 50px auto;
+      max-width: 1200px;
+      border-radius: 15px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    main h2 {
+      color: #6BBF59;
+      font-size: 32px;
+      animation: slideInLeft 1.5s ease-in-out;
+    }
+
+    main p {
+      animation: slideInRight 1.5s ease-in-out;
+    }
+
+    figure {
+      margin: 40px auto;
+      position: relative;
+      text-align: center;
+      animation: popIn 1.8s ease-in-out;
+    }
+
+    figure img {
+      max-width: 32%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    figure img:hover {
+      transform: scale(1.05);
+    }
+
+    
+    footer {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes popIn {
+      from {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 36px;
+      }
+
+      nav a {
+        font-size: 16px;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      footer {
+        padding: 15px;
+      }
+
+      footer .social-icons i {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Svijet Čajeva</h1>
+  <nav>
+    <a href="Čaj projekt.html">Home</a>
+    <a href="Novosti.html">Novosti</a>
+    <a href="Vrste čajeva.html">Vrste Čajeva</a>
+    <a href="Galerija.html">Galerija & Shop</a>
+    <a href="O nama.html">O nama</a>
+    <a href="Kontakt.html">Kontakt</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Upoznajte Svijet Čajeva</h2>
+  
+  <p>Čaj je jedan od najpopularnijih napitaka na svijetu. S bogatom povijesti, od svojih početaka u Kini do današnjih dana, čaj je postao ključni dio mnogih kultura i tradicija. Danas postoje različite vrste čajeva koje nude brojne zdravstvene prednosti i okuse.</p>
+  
+  <p>Zeleni čaj, crni čaj, bijeli čaj, i biljni čajevi - svi oni nude svoje jedinstvene benefite. Zeleni čaj, na primjer, poznat je po svojim antioksidativnim svojstvima i koristi se za poboljšanje metabolizma. S druge strane, crni čaj nudi bogatiji okus i idealan je za početak dana.</p>
+  
+  <p>Biljni čajevi kao što su kamilica, lavanda, i mente donose opuštanje i smanjenje stresa. Čaj je također odličan način za hidrataciju i opuštanje nakon napornog dana. Bez obzira na to koji čaj odabrali, svaka šalica donosi svoj užitak i zdravlje.</p>
+
+  <figure>
+    <img src="./black-tea-istock-1176.jpg" alt="Šalica čaja" />
+    <figcaption>Opuštajuća šalica čaja u mirnom okruženju.</figcaption>
+  </figure>
+  
+</main>
+
+<footer>
+  <p>&copy; 2025 Svijet Čajeva. Sva prava pridržana.</p>
+  <div class="social-icons">
+    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+  </div>
+  <p>Posjetite moj <a href="https://github.com/mvukelja" target="_blank">GitHub</a> za više informacija.</p>
+</footer>
+
+</body>
+</html>

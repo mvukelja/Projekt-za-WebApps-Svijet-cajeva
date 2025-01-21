@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galerija i proizvodi raznovrsnih čajeva.">
+  <meta name="keywords" content="čajevi, galerija, proizvodi">
+  <meta name="author" content="Vaše ime">
+  <title>Galerija & Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('./tea banner.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+
+    header {
+      background-color: rgba(19, 18, 18, 0.5);
+      color: white;
+      padding: 50px 0;
+      text-align: center;
+      
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      color: #a6c2a0;
+    }
+
+    main {
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      margin: 50px auto;
+      max-width: 1200px;
+      border-radius: 15px;
+    }
+
+    h1, h2 {
+      color: #6BBF59;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); 
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;  
+      justify-content: space-between; 
+      height: 300px;  
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .product img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      object-fit: cover; 
+    }
+
+    .product {
+        display: flex; 
+        align-items: center; 
+    }
+
+    .product h3.special-product {
+        margin-top: 98px; 
+        margin-left: 0; 
+    }
+
+
+    .product h3 {
+      font-size: 18px;
+      margin: 30px 0 2px;
+    }
+
+    .product button {
+      background-color: #6BBF59;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: auto; 
+    }
+
+    .product button:hover {
+      background-color: #5DA74F;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    
+    
+    @media (max-width: 1024px) {
+      .product-grid {
+        grid-template-columns: repeat(3, 1fr); 
+      }
+    }
+
+    @media (max-width: 768px) {
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr); 
+      }
+
+      header h1 {
+        font-size: 28px;
+      }
+
+      nav a {
+        font-size: 16px;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      footer {
+        padding: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .product-grid {
+        grid-template-columns: repeat(1, 1fr); 
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Galerija & Shop</h1>
+  <nav>
+    <a href="Čaj projekt.html">Home</a>
+    <a href="Novosti.html">Novosti</a>
+    <a href="Vrste čajeva.html">Vrste Čajeva</a>
+    <a href="Galerija.html">Galerija & Shop</a>
+    <a href="O nama.html">O nama</a>
+    <a href="Kontakt.html">Kontakt</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Naša galerija i proizvodi</h2>
+  <div class="product-grid">
+    <div class="product">
+        <img src="./vrste cajeva/zeleni caj.jpg" alt="Zeleni čaj">
+        <h3 class="special-product">Zeleni čaj</h3> 
+        <button>Pošalji upit</button>
+      </div>
+      
+    <div class="product">
+      <img src="./vrste cajeva/black tea.webp" alt="Crni čaj">
+      <h3>Crni čaj</h3>
+      <button>Pošalji upit</button>
+    </div>
+    <div class="product">
+      <img src="./vrste cajeva/white tea.webp" alt="Bijeli čaj">
+      <h3>Bijeli čaj</h3>
+      <button>Pošalji upit</button>
+    </div>
+    <div class="product">
+        <img src="./vrste cajeva/rooibos tea.avif" alt="rooibos čaj">
+        <h3 class="special-product">Rooibos čaj</h3> 
+        <button>Pošalji upit</button>
+      </div>
+    <div class="product">
+        <img src="./vrste cajeva/puerh tea.jpg" alt="puerh čaj">
+        <h3 class="special-product">Puerh čaj</h3> 
+        <button>Pošalji upit</button>
+      </div>
+    <div class="product">
+      <img src="./vrste cajeva/matcha tea.webp" alt="Matcha čaj">
+      <h3>Matcha čaj</h3>
+      <button>Pošalji upit</button>
+    </div>
+    <div class="product">
+        <img src="./vrste cajeva/oolong tea.avif" alt="oolong čaj">
+        <h3 class="special-product">Oolong čaj</h3> 
+        <button>Pošalji upit</button>
+      </div>
+    <div class="product">
+        <img src="./vrste cajeva/fruit tea.jpg" alt="Voćni čaj">
+        <h3 class="special-product">Voćni čaj</h3> 
+        <button>Pošalji upit</button>
+      </div>
+    <div class="product">
+        <img src="./vrste cajeva/vege tea.jpg" alt="Biljni čaj">
+        <h3 class="special-product">Biljni čaj</h3> 
+        <button>Pošalji upit</button>
+      </div>
+    <div class="product">
+        <img src="./vrste cajeva/lavander tea.jpg" alt="Lavanda čaj">
+        <h3 class="special-product">Čaj od lavande</h3> 
+        <button>Pošalji upit</button>
+      </div>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Svijet Čajeva. Sva prava pridržana.</p>
+  <div class="social-icons">
+    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+  </div>
+  <p>Posjetite moj <a href="https://github.com/mvukelja" target="_blank">GitHub</a> za više informacija.</p>
+</footer>
+
+</body>
+</html>
